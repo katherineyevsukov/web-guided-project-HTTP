@@ -35,6 +35,9 @@ function Item(props) {
   //4. Redirect to item list page.
   const handleDelete = ()=> {
     axios.delete(`http://localhost:3333/items/${item.id}`)
+      .then(resp=> {
+        console.log(resp);
+      })
   }
 
 
