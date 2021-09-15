@@ -6,7 +6,7 @@ import ItemDescription from './ItemDescription';
 import ItemShipping from './ItemShipping';
 
 const Modal = ()=> {
-  return (<div> 
+  return (<div className="modal"> 
     <h1>Are you sure you want to delete?</h1> 
     <button>Yes</button> <button>No</button>
   </div>);

@@ -319,3 +319,8 @@ input:focus + .baseline:before {
 .form-button {
   margin: 24px 0;
 }
+
+.modal {
+  border: 2px solid black;
+  padding: 2em;
+}
