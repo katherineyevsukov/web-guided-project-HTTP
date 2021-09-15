@@ -10,6 +10,11 @@ const initialItem = {
   shipping: ""
 };
 
+//To Complete Edit
+    //3. Support editing update form.
+    //4. Click the Update button.
+    //5. Redirect to the item page we are updating.
+
 const UpdateForm = props => {
   const [item, setItem] = useState(initialItem);
 
