@@ -43,6 +43,9 @@ function Item(props) {
     //   })
   }
 
+
+  const showModal = false;
+
   return (
     <div className="item-wrapper">
       <div className="item-header">
@@ -75,8 +78,13 @@ function Item(props) {
       <button onClick={handleDelete} className="md-button">
         Delete
       </button>
-      (
+      {
+        showModal && (<div> <h1>Are you sure you want to delete?</h1> <button>Yes</button> <button>No</button></div>
+
+        )
+      } 
         
+        <
       )
       
     </div>
