@@ -75,6 +75,9 @@ function Item(props) {
       <button onClick={handleDelete} className="md-button">
         Delete
       </button>
+      <div>
+        <h1>Are you sure you want to delete?</h1>
+      </div>
     </div>
   );
 }
