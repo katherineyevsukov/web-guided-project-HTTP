@@ -325,6 +325,6 @@ input:focus + .baseline:before {
   padding: 2em;
   position: absolute;
   background-color: white;
-  top: 50%;
-  left:50%;
+  top: 25%;
+  left:25%;
 }
