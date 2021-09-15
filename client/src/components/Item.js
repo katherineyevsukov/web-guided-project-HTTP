@@ -44,7 +44,7 @@ function Item(props) {
   }
 
 
-  const showModal = false;
+  const showModal = true;
 
   return (
     <div className="item-wrapper">
@@ -79,14 +79,8 @@ function Item(props) {
         Delete
       </button>
       {
-        showModal && (<div> <h1>Are you sure you want to delete?</h1> <button>Yes</button> <button>No</button></div>
-
-        )
+        showModal && (<div> <h1>Are you sure you want to delete?</h1> <button>Yes</button> <button>No</button></div>)
       } 
-        
-        <
-      )
-      
     </div>
   );
 }
