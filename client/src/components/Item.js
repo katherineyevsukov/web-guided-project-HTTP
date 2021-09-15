@@ -52,21 +52,18 @@ function Item(props) {
   //4. Redirect to item list page.
   const handleDelete = ()=> {
     setShowModal(true);
-
-    // axios.delete(`http://localhost:3333/items/${item.id}`)
-    //   .then(resp=> {
-    //     console.log(resp.data);X
-    //     props.setItems(resp.data);
-    //     props.history.push('/item-list');
-    //   })
   }
 
   const handleYesFunc = ()=> {
-    console.log("YESSSS!");
+    axios.delete(`http://localhost:3333/items/${item.id}`)
+      .then(resp=> {
+        props.setItems(resp.data);
+        props.history.push('/item-list');
+      })
   }
 
   const handleNoFunc = ()=> {
-    console.log("NOOOOO!");
+    setShowModal(false);
   }
 
   return (
