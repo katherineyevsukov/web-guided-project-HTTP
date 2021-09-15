@@ -14,6 +14,7 @@ const UpdateForm = props => {
   const [item, setItem] = useState(initialItem);
   // const id = props.match.params.id;
   const params = useParams();
+  console.log(params);
 
   useEffect(()=> {
     axios.get(`http://localhost:3333/items/${id}`)
