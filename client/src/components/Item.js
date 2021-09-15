@@ -94,7 +94,7 @@ function Item(props) {
         Delete
       </button>
       {
-        showModal && (<Modal/>)
+        showModal && (<Modal yesFunc={handleYesFunc} noFunc={handleNoFunc}/>)
       } 
     </div>
   );
