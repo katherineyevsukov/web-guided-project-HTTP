@@ -34,12 +34,13 @@ function Item(props) {
   //3. Update local state to reflect the deleted item
   //4. Redirect to item list page.
   const handleDelete = ()=> {
-    axios.delete(`http://localhost:3333/items/${item.id}`)
-      .then(resp=> {
-        console.log(resp.data);X
-        props.setItems(resp.data);
-        props.history.push('/item-list');
-      })
+    console.log("deleting");
+    // axios.delete(`http://localhost:3333/items/${item.id}`)
+    //   .then(resp=> {
+    //     console.log(resp.data);X
+    //     props.setItems(resp.data);
+    //     props.history.push('/item-list');
+    //   })
   }
 
   return (
