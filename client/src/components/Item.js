@@ -14,6 +14,8 @@ const Modal = ()=> {
 
 function Item(props) {
   const [item, setItem] = useState({});
+  const [showModal, setShowModal] = useState(false);
+
   const { id } = props.match.params;
 
   useEffect(()=>{
@@ -49,9 +51,6 @@ function Item(props) {
     //     props.history.push('/item-list');
     //   })
   }
-
-
-  const showModal = true;
 
   return (
     <div className="item-wrapper">
