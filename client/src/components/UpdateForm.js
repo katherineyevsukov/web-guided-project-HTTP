@@ -41,8 +41,11 @@ const UpdateForm = props => {
     //4. Click the Update button.
 
     //5. Redirect to the item page we are updating.
-    axios.
-    console.log(item);
+    axios
+      .put(`http://localhost:3333/items/${id}`, item)
+      .then(resp=> {
+        console.log(resp);
+      });
   };
 
   return (
