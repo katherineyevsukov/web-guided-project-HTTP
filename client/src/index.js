@@ -50,7 +50,7 @@ const App = () => {
       />
       <Route path="/item-form" component={ItemForm} />
       <Route path="/item-update/:id" render={()=>{
-        return <h1>This is the stuff</h1>
+        return <UpdateForm setItems={setItems}/>
       }}/>
     </div>
   );
