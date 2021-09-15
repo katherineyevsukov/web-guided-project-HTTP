@@ -34,7 +34,7 @@ function Item(props) {
   //3. Update local state to reflect the deleted item
   //4. Redirect to item list page.
   const handleDelete = ()=> {
-    console.log("clicked delete");
+    axios.delete(`http://localhost:3333/items/${item.id}`)
   }
 
 
