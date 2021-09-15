@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import ItemDescription from './ItemDescription';
 import ItemShipping from './ItemShipping';
+import Modal from './Modal';
 
 function Item(props) {
   const [item, setItem] = useState({});
