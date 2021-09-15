@@ -61,6 +61,14 @@ function Item(props) {
     //   })
   }
 
+  const handleYesFunc = ()=> {
+    console.log("YESSSS!");
+  }
+
+  const handleNoFunc = ()=> {
+    console.log("NOOOOO!");
+  }
+
   return (
     <div className="item-wrapper">
       <div className="item-header">
