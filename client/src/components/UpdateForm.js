@@ -19,7 +19,8 @@ const UpdateForm = props => {
   const [item, setItem] = useState(initialItem);
 
   useEffect(()=> {
-    
+    axios.get('http://localhost:3333/items/1')
+      .then(res=)
   }, []);
 
   const changeHandler = ev => {
