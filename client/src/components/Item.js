@@ -6,9 +6,17 @@ import ItemDescription from './ItemDescription';
 import ItemShipping from './ItemShipping';
 
 const Modal = ()=> {
+  const handleYes =()=>{
+
+  }
+
+  const handleNo =()=>{
+    
+  }
+
   return (<div className="modal"> 
     <h1>Are you sure you want to delete?</h1> 
-    <button>Yes</button> <button>No</button>
+    <button onClick={handleYes}>Yes</button> <button onClick={handleNo}>No</button>
   </div>);
 }
 
@@ -44,6 +52,7 @@ function Item(props) {
   //4. Redirect to item list page.
   const handleDelete = ()=> {
     setShowModal(true);
+
     // axios.delete(`http://localhost:3333/items/${item.id}`)
     //   .then(resp=> {
     //     console.log(resp.data);X
