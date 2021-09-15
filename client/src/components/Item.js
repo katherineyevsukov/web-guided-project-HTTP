@@ -25,10 +25,7 @@ function Item(props) {
     //1. Capture a edit click.
     //2. Redirect to update form page.
     props.history.push('/item-update');
-
-    //3. Support editing update form.
-    //4. Click the Update button.
-    //5. Redirect to the item page we are updating.
+    //to be continued in UpdateForm.js
   }
 
   return (
