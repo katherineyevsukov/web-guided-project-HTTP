@@ -42,7 +42,6 @@ function Item(props) {
       })
   }
 
-
   return (
     <div className="item-wrapper">
       <div className="item-header">
