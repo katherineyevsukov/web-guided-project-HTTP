@@ -12,7 +12,7 @@ import "./styles.css";
 
 const App = () => {
   const [items, setItems] = useState([]);
-  
+
   useEffect(() => {
     axios
       .get("http://localhost:3333/items")
@@ -21,6 +21,7 @@ const App = () => {
       })
       .catch(error => console.log(error));
   }, []);
+
 
   return (
     <div className="App">
