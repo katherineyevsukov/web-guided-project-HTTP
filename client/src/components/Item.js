@@ -5,6 +5,13 @@ import axios from 'axios';
 import ItemDescription from './ItemDescription';
 import ItemShipping from './ItemShipping';
 
+const Modal = ()=> {
+  return (<div> 
+    <h1>Are you sure you want to delete?</h1> 
+    <button>Yes</button> <button>No</button>
+  </div>);
+}
+
 function Item(props) {
   const [item, setItem] = useState({});
   const { id } = props.match.params;
@@ -79,7 +86,7 @@ function Item(props) {
         Delete
       </button>
       {
-        showModal && (<div> <h1>Are you sure you want to delete?</h1> <button>Yes</button> <button>No</button></div>)
+        showModal && (<Modal/>)
       } 
     </div>
   );
