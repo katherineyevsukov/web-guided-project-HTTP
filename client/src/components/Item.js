@@ -5,13 +5,13 @@ import axios from 'axios';
 import ItemDescription from './ItemDescription';
 import ItemShipping from './ItemShipping';
 
-const Modal = ()=> {
+const Modal = (props)=> {
   const handleYes =()=>{
-
+    props.yesFunc();
   }
 
   const handleNo =()=>{
-    
+    props.noFunc();
   }
 
   return (<div className="modal"> 
