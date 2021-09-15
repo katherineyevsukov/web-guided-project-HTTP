@@ -99,7 +99,7 @@ function Item(props) {
         Delete
       </button>
       {
-        showModal && (<Modal title={"Are you sure you want deletion?"} yesFunc={handleYesFunc} noFunc={handleNoFunc}/>)
+        showModal && (<Modal title={`Are you sure you want deletion ${item.name}?`} yesFunc={handleYesFunc} noFunc={handleNoFunc}/>)
       } 
     </div>
   );
