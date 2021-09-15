@@ -20,7 +20,7 @@ const UpdateForm = props => {
   const id = 1;
 
   useEffect(()=> {
-    console.log(props);
+    console.log(props.match.params.id);
 
     axios.get(`http://localhost:3333/items/${id}`)
       .then(resp=>{
