@@ -5,21 +5,6 @@ import axios from 'axios';
 import ItemDescription from './ItemDescription';
 import ItemShipping from './ItemShipping';
 
-const Modal = (props)=> {
-  const handleYes =()=>{
-    props.yesFunc();
-  }
-
-  const handleNo =()=>{
-    props.noFunc();
-  }
-
-  return (<div className="modal"> 
-    <h1>{props.title}</h1> 
-    <button onClick={handleYes}>Yes</button> <button onClick={handleNo}>No</button>
-  </div>);
-}
-
 function Item(props) {
   const [item, setItem] = useState({});
   const [showModal, setShowModal] = useState(false);
