@@ -21,7 +21,13 @@ function Item(props) {
   }
 
   const handleEdit = ()=> {
-    console.log("clicked edit button");
+    //TO Do an edit:
+    //1. Capture a edit click.
+    //2. Redirect to update form page.
+    
+    //3. Support editing update form.
+    //4. Click the Update button.
+    //5. Redirect to the item page we are updating.
   }
 
   return (
