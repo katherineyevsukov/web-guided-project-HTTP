@@ -28,6 +28,13 @@ function Item(props) {
     //to be continued in UpdateForm.js
   }
 
+  //To Do a delete
+  //1. Capture a click on the delete button
+  //2. Do a delete axios call on the current item.
+  //3. Update local state to reflect the deleted item
+  //4. Redirect to item list page.
+
+
   return (
     <div className="item-wrapper">
       <div className="item-header">
